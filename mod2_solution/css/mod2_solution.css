@@ -1,0 +1,74 @@
+/********** Base styles **********/
+* {
+  box-sizing: margin-box;
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  font-family: Helvetica;
+  color: white;
+}
+
+.titles {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    width: 100px;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}
+
+.details {
+    margin: 50px 15px 15px 15px;
+}
+
+.sections {
+    position: relative;
+    background-color: gray;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#p1 {
+    background-color: #00FFFF;
+}
+
+#p2 {
+    background-color: #FF00FF;
+}
+
+#p3 {
+    background-color: #9966ff;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Desktop Version **********/
+@media (min-width: 992px) {
+  .col-desk-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/********** Tablet Version **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-tab-6, .col-tab-12 {
+    float: left;
+  }
+  .col-tab-6 {
+    width: 50%;
+  }
+  .col-tab-12 {
+    width: 100%;
+  }
+}
